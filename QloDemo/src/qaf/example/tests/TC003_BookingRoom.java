@@ -1,5 +1,6 @@
 package qaf.example.tests;
 
+import static com.qmetry.qaf.automation.step.CommonStep.assertText;
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.get;
 import static com.qmetry.qaf.automation.step.CommonStep.getText;
@@ -7,6 +8,7 @@ import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
 
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.Test;
@@ -69,6 +71,10 @@ public class TC003_BookingRoom extends WebDriverTestCase {
 		Thread.sleep(5000);
 		Reporter.logWithScreenShot("TC003-01-ConfirmMessage");
 		String getText = getText("get.confirmmessage");
+		System.out.println(getText);
 		Log.info(getText);
+		assertText("get.confirmmessage", "Your order on Qlo Reservation System is complete.");
+		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		click("click.logout");
 	}
 }

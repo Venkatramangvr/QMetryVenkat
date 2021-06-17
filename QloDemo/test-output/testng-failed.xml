@@ -1,62 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="qaf.example.tests.TC004_OrderCancellation">
-        <methods>
-          <include name="testOrderCancellation" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="setupMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC004_OrderCancellation -->
-      <class name="qaf.example.tests.TC007_RemoveFromCart">
-        <methods>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="setupMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC007_RemoveFromCart -->
-      <class name="qaf.example.tests.TC005_DetailsUpdate">
-        <methods>
-          <include name="testPersonalDetailsUpdate" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="setupMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC005_DetailsUpdate -->
-      <class name="qaf.example.tests.TC002_AddingAddress">
-        <methods>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="setupMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC002_AddingAddress -->
-      <class name="qaf.example.tests.TC006_ContactUs">
-        <methods>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="setupMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC006_ContactUs -->
-      <class name="qaf.example.tests.TC003_BookingRoom">
-        <methods>
-          <include name="testBookingRoom" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="afterClass"/>
-          <include name="setupMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- qaf.example.tests.TC003_BookingRoom -->
       <class name="qaf.example.tests.TC001_RegisterAccount">
         <methods>
           <include name="setupTest"/>
+          <include name="testRegisterAccount" invocation-numbers="0"/>
           <include name="setupSuit"/>
           <include name="setup"/>
           <include name="afterClass"/>
@@ -66,5 +16,5 @@
         </methods>
       </class> <!-- qaf.example.tests.TC001_RegisterAccount -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

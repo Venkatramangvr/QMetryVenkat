@@ -50,7 +50,7 @@ public class TC004_OrderCancellation extends WebDriverTestCase {
 		Thread.sleep(2000);
 		sendKeys(data.get("CancelMessage"), "input.cancelreason");
 		click("click.submitreason");
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		click("click.logout");
 		Thread.sleep(7000);
 	}

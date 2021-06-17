@@ -1,553 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="18" total="25" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="241390" started-at="2021-06-11T07:18:08Z" finished-at="2021-06-11T07:22:09Z">
+  <suite name="Default suite" duration-ms="367805" started-at="2021-06-17T03:40:11Z" finished-at="2021-06-17T03:46:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="241390" started-at="2021-06-11T07:18:08Z" finished-at="2021-06-11T07:22:09Z">
-      <class name="qaf.example.tests.TC003_BookingRoom">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36]" name="setup" is-config="true" duration-ms="1" started-at="2021-06-11T12:49:49Z" finished-at="2021-06-11T12:49:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="testBookingRoom(java.util.Map)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36]" name="testBookingRoom" duration-ms="56449" started-at="2021-06-11T12:49:49Z" finished-at="2021-06-11T12:50:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[2]/div/div[2]/div/section/div/section/div/div[1]/div/div[2]/div[2]/div/div/form[1]/fieldset/div[1]/p[1]/a
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[2]/div/div[2]/div/section/div/section/div/div[1]/div/div[2]/div[2]/div/div/form[1]/fieldset/div[1]/p[1]/a
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:168)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:213)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:302)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:249)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.qmetry.qaf.automation.step.CommonStep.click_aroundBody38(CommonStep.java:452)
-	at com.qmetry.qaf.automation.step.CommonStep$AjcClosure39.run(CommonStep.java:1)
-	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter$MockJavaStep.doExecute(JavaStepReporter.java:130)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter.javaTestStep(JavaStepReporter.java:80)
-	at com.qmetry.qaf.automation.step.CommonStep.click(CommonStep.java:451)
-	at qaf.example.tests.TC003_BookingRoom.testBookingRoom(TC003_BookingRoom.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[2]/div/div[2]/div/section/div/section/div/div[1]/div/div[2]/div[2]/div/div/form[1]/fieldset/div[1]/p[1]/a"}
-  (Session info: chrome=92.0.4515.40)
-  (Driver info: chromedriver=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52432}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}), userDataDir=C:\Users\admin\AppData\Local\Temp\scoped_dir17224_895271381}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.40, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: d568830a8f070bea98baea8691c0f7a9
-*** Element info: {Using=xpath, value=/html/body/div/div[2]/div/div[2]/div/section/div/section/div/div[1]/div/div[2]/div[2]/div/div/form[1]/fieldset/div[1]/p[1]/a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:396)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:169)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:147)
-	... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBookingRoom -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:49:49Z" finished-at="2021-06-11T12:49:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC003_BookingRoom.testBookingRoom(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-06-11T12:50:49Z" finished-at="2021-06-11T12:50:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testBookingRoom status=FAILURE method=TC003_BookingRoom.testBookingRoom(java.util.Map)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC003_BookingRoom@78b66d36]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-06-11T12:50:49Z" finished-at="2021-06-11T12:50:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- qaf.example.tests.TC003_BookingRoom -->
-      <class name="qaf.example.tests.TC006_ContactUs">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:28Z" finished-at="2021-06-11T12:51:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:28Z" finished-at="2021-06-11T12:51:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC006_ContactUs.testContactUs(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="testContactUs(java.util.Map)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a]" name="testContactUs" duration-ms="13143" started-at="2021-06-11T12:51:28Z" finished-at="2021-06-11T12:51:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactUs -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-11T12:51:41Z" finished-at="2021-06-11T12:51:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testContactUs status=SUCCESS method=TC006_ContactUs.testContactUs(java.util.Map)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC006_ContactUs@69b2283a]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-06-11T12:51:41Z" finished-at="2021-06-11T12:51:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- qaf.example.tests.TC006_ContactUs -->
-      <class name="qaf.example.tests.TC007_RemoveFromCart">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7]" name="setup" is-config="true" duration-ms="1" started-at="2021-06-11T12:51:41Z" finished-at="2021-06-11T12:51:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testRemoveFromCart(java.util.Map)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7]" name="testRemoveFromCart" duration-ms="24356" started-at="2021-06-11T12:51:42Z" finished-at="2021-06-11T12:52:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRemoveFromCart -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:42Z" finished-at="2021-06-11T12:51:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC007_RemoveFromCart.testRemoveFromCart(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:52:06Z" finished-at="2021-06-11T12:52:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=TC007_RemoveFromCart.testRemoveFromCart(java.util.Map)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC007_RemoveFromCart@22a637e7]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-06-11T12:52:06Z" finished-at="2021-06-11T12:52:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- qaf.example.tests.TC007_RemoveFromCart -->
-      <class name="qaf.example.tests.TC002_AddingAddress">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e]" name="setup" is-config="true" duration-ms="15" started-at="2021-06-11T12:49:22Z" finished-at="2021-06-11T12:49:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:49:22Z" finished-at="2021-06-11T12:49:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC002_AddingAddress.testAddingAddress(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="testAddingAddress(java.util.Map)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e]" name="testAddingAddress" duration-ms="26107" started-at="2021-06-11T12:49:22Z" finished-at="2021-06-11T12:49:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddingAddress -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-11T12:49:49Z" finished-at="2021-06-11T12:49:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testAddingAddress status=SUCCESS method=TC002_AddingAddress.testAddingAddress(java.util.Map)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC002_AddingAddress@7ce3cb8e]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-06-11T12:49:49Z" finished-at="2021-06-11T12:49:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- qaf.example.tests.TC002_AddingAddress -->
-      <class name="qaf.example.tests.TC005_DetailsUpdate">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:09Z" finished-at="2021-06-11T12:51:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72]" name="setupMethod" is-config="true" duration-ms="16" started-at="2021-06-11T12:51:09Z" finished-at="2021-06-11T12:51:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC005_DetailsUpdate.testPersonalDetailsUpdate(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="FAIL" signature="testPersonalDetailsUpdate(java.util.Map)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72]" name="testPersonalDetailsUpdate" duration-ms="18513" started-at="2021-06-11T12:51:09Z" finished-at="2021-06-11T12:51:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:168)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:213)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:302)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:249)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.qmetry.qaf.automation.step.CommonStep.click_aroundBody38(CommonStep.java:452)
-	at com.qmetry.qaf.automation.step.CommonStep$AjcClosure39.run(CommonStep.java:1)
-	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter$MockJavaStep.doExecute(JavaStepReporter.java:130)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter.javaTestStep(JavaStepReporter.java:80)
-	at com.qmetry.qaf.automation.step.CommonStep.click(CommonStep.java:451)
-	at qaf.example.tests.TC005_DetailsUpdate.testPersonalDetailsUpdate(TC005_DetailsUpdate.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span"}
-  (Session info: chrome=92.0.4515.40)
-  (Driver info: chromedriver=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52432}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}), userDataDir=C:\Users\admin\AppData\Local\Temp\scoped_dir17224_895271381}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.40, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: d568830a8f070bea98baea8691c0f7a9
-*** Element info: {Using=xpath, value=/html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:396)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:169)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:147)
-	... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPersonalDetailsUpdate -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:28Z" finished-at="2021-06-11T12:51:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testPersonalDetailsUpdate status=FAILURE method=TC005_DetailsUpdate.testPersonalDetailsUpdate(java.util.Map)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC005_DetailsUpdate@bef2d72]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:28Z" finished-at="2021-06-11T12:51:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- qaf.example.tests.TC005_DetailsUpdate -->
+    <test name="Default test" duration-ms="367805" started-at="2021-06-17T03:40:11Z" finished-at="2021-06-17T03:46:19Z">
       <class name="qaf.example.tests.TC001_RegisterAccount">
-        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="setupSuit" is-config="true" duration-ms="54" started-at="2021-06-11T12:48:08Z" finished-at="2021-06-11T12:48:08Z">
+        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="setupSuit" is-config="true" duration-ms="87" started-at="2021-06-17T09:10:11Z" finished-at="2021-06-17T09:10:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuit -->
-        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="setupTest" is-config="true" duration-ms="0" started-at="2021-06-11T12:48:08Z" finished-at="2021-06-11T12:48:08Z">
+        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="setupTest" is-config="true" duration-ms="5" started-at="2021-06-17T09:10:11Z" finished-at="2021-06-17T09:10:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-11T12:48:08Z" finished-at="2021-06-11T12:48:08Z">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="setup" is-config="true" duration-ms="2" started-at="2021-06-17T09:10:11Z" finished-at="2021-06-17T09:10:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="setupMethod" is-config="true" duration-ms="16" started-at="2021-06-11T12:48:08Z" finished-at="2021-06-11T12:48:08Z">
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="setupMethod" is-config="true" duration-ms="2" started-at="2021-06-17T09:10:12Z" finished-at="2021-06-17T09:10:12Z">
           <params>
             <param index="0">
               <value>
@@ -556,56 +49,56 @@ Session ID: d568830a8f070bea98baea8691c0f7a9
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="testRegisterAccount(java.util.Map)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="testRegisterAccount" duration-ms="70943" started-at="2021-06-11T12:48:08Z" finished-at="2021-06-11T12:49:19Z">
+        <test-method status="PASS" signature="testRegisterAccount(java.util.Map)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="testRegisterAccount" duration-ms="364752" started-at="2021-06-17T09:10:12Z" finished-at="2021-06-17T09:16:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
+                <![CDATA[{FirstName=RarRaj, LastName=Raj, Email=RarRajRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterAccount -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-06-11T12:49:22Z" finished-at="2021-06-11T12:49:22Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-06-17T09:16:17Z" finished-at="2021-06-17T09:16:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:49:22Z" finished-at="2021-06-11T12:49:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=testRegisterAccount status=SUCCESS method=TC001_RegisterAccount.testRegisterAccount(java.util.Map)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94] output={null}]]]>
+                <![CDATA[[TestResult name=testRegisterAccount status=SUCCESS method=TC001_RegisterAccount.testRegisterAccount(java.util.Map)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@5b0abc94]" name="afterTest" is-config="true" duration-ms="2871" started-at="2021-06-11T12:52:06Z" finished-at="2021-06-11T12:52:09Z">
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="afterClass" is-config="true" duration-ms="11" started-at="2021-06-17T09:16:17Z" finished-at="2021-06-17T09:16:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC001_RegisterAccount@3b6d844d]" name="afterTest" is-config="true" duration-ms="1971" started-at="2021-06-17T09:16:17Z" finished-at="2021-06-17T09:16:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3e6104fc]]>
               </value>
             </param>
           </params>
@@ -613,159 +106,6 @@ Session ID: d568830a8f070bea98baea8691c0f7a9
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- qaf.example.tests.TC001_RegisterAccount -->
-      <class name="qaf.example.tests.TC004_OrderCancellation">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee]" name="setup" is-config="true" duration-ms="1" started-at="2021-06-11T12:50:49Z" finished-at="2021-06-11T12:50:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee]" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-06-11T12:50:49Z" finished-at="2021-06-11T12:50:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qaf.example.tests.TC004_OrderCancellation.testOrderCancellation(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="FAIL" signature="testOrderCancellation(java.util.Map)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee]" name="testOrderCancellation" duration-ms="18668" started-at="2021-06-11T12:50:49Z" finished-at="2021-06-11T12:51:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{FirstName=Tiny, LastName=Raj, Email=TinyRaj@Test.com, Telephone=9842198421, Password=Test#123, Day=8, Month=June, Year=1998, Company=HCL, Address=Madurai, Address1=India, City=New, State=Florida, ZipCode=23412, HomePhone=2344312, Addinfo=NA, FirstNameUp=Venkat, DayUp=24, MonthUp=August, YearUp=1993, Message=Please Clean the Rooms, Location=United States, CancelMessage=Room Cancelled, null=, __index=1}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: /html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: QAFExtendedWebDriver
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:168)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:213)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:302)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:249)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.qmetry.qaf.automation.step.CommonStep.click_aroundBody38(CommonStep.java:452)
-	at com.qmetry.qaf.automation.step.CommonStep$AjcClosure39.run(CommonStep.java:1)
-	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter$MockJavaStep.doExecute(JavaStepReporter.java:130)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.JavaStepReporter.javaTestStep(JavaStepReporter.java:80)
-	at com.qmetry.qaf.automation.step.CommonStep.click(CommonStep.java:451)
-	at qaf.example.tests.TC004_OrderCancellation.testOrderCancellation(TC004_OrderCancellation.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span"}
-  (Session info: chrome=92.0.4515.40)
-  (Driver info: chromedriver=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-SS1171L', ip: '192.168.29.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52432}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}), userDataDir=C:\Users\admin\AppData\Local\Temp\scoped_dir17224_895271381}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.40, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: d568830a8f070bea98baea8691c0f7a9
-*** Element info: {Using=xpath, value=/html/body/div/div[1]/header/div[3]/div/div/div[7]/ul/li/a/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:396)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:169)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at com.qmetry.qaf.automation.ui.util.DynamicWait.until(DynamicWait.java:147)
-	... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOrderCancellation -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:09Z" finished-at="2021-06-11T12:51:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-11T12:51:09Z" finished-at="2021-06-11T12:51:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@661972b0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=testOrderCancellation status=FAILURE method=TC004_OrderCancellation.testOrderCancellation(java.util.Map)[pri:0, instance:qaf.example.tests.TC004_OrderCancellation@5223e5ee] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- qaf.example.tests.TC004_OrderCancellation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

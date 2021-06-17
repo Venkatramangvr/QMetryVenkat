@@ -1,5 +1,6 @@
 package qaf.example.tests;
 
+import static com.qmetry.qaf.automation.step.CommonStep.assertText;
 import static com.qmetry.qaf.automation.step.CommonStep.clear;
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.get;
@@ -56,5 +57,8 @@ public class TC006_ContactUs extends WebDriverTestCase {
 		Reporter.logWithScreenShot("TC006-01-Contact Us");
 		String getText = getText("get.successsendmes");
 		Log.info(getText);
+		assertText("get.successsendmes", "Your message has been successfully sent to our team.");
+		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		click("click.logout");
 	}
 }

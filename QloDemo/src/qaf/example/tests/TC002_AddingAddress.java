@@ -2,7 +2,9 @@ package qaf.example.tests;
 
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.get;
+import static com.qmetry.qaf.automation.step.CommonStep.getText;
 import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
+import static com.qmetry.qaf.automation.step.CommonStep.assertText;
 import static com.qmetry.qaf.automation.step.CommonStep.clear;
 
 import java.util.Map;
@@ -14,6 +16,8 @@ import com.qmetry.qaf.automation.data.MetaData;
 import com.qmetry.qaf.automation.testng.dataprovider.QAFDataProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestCase;
 import com.qmetry.qaf.automation.util.Reporter;
+
+import Logs.Log;
 
 @MetaData("{'Story': 'Testing Qlo Application'}")
 public class TC002_AddingAddress extends WebDriverTestCase {
@@ -51,6 +55,9 @@ public class TC002_AddingAddress extends WebDriverTestCase {
 		click("click.subadd");
 		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Reporter.logWithScreenShot("TC002-01-Address");
+		String getText = getText("get.messageadd");
+		Log.info(getText);
+		assertText("get.messageadd", "Your addresses are listed below.");
 		click("click.bhome");
 		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
